@@ -9,4 +9,9 @@ describe Takeaway do
         
     end
 
+    it 'should allow someone to order a dish by giving list, quantity and total' do
+        nandos = Takeaway.new
+        expect{ nandos.make_order({dishes:{quarter_chicken: 1, 
+                                          half_chicken: 2}}, 15)}.not_to raise_error
+    end
 end
