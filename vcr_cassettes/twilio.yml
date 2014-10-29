@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://ACcc9266bb000e4b2c374a8cd8c16196e7:417481a39389b423ded3b322568ca09e@api.twilio.com/2010-04-01/Accounts/ACcc9266bb000e4b2c374a8cd8c16196e7/Messages.json
+    body:
+      encoding: US-ASCII
+      string: To=%2B447903524834&From=%2B441683292035&Body=and+this+is+the+message
+    headers:
+      Accept:
+      - application/json
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - twilio-ruby/3.13.1 (ruby/x86_64-darwin12.5.0 2.0.0-p451)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Date:
+      - Wed, 29 Oct 2014 13:12:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '758'
+      Connection:
+      - close
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+    body:
+      encoding: UTF-8
+      string: '{"sid": "SM49647004b1b143c281a61a422846809b", "date_created": "Wed,
+        29 Oct 2014 13:12:42 +0000", "date_updated": "Wed, 29 Oct 2014 13:12:42 +0000",
+        "date_sent": null, "account_sid": "ACcc9266bb000e4b2c374a8cd8c16196e7", "to":
+        "+447903524834", "from": "+441683292035", "body": "and this is the message",
+        "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api",
+        "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code":
+        null, "error_message": null, "uri": "/2010-04-01/Accounts/ACcc9266bb000e4b2c374a8cd8c16196e7/Messages/SM49647004b1b143c281a61a422846809b.json",
+        "subresource_uris": {"media": "/2010-04-01/Accounts/ACcc9266bb000e4b2c374a8cd8c16196e7/Messages/SM49647004b1b143c281a61a422846809b/Media.json"}}'
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 13:12:42 GMT
+- request:
+    method: post
+    uri: https://ACcc9266bb000e4b2c374a8cd8c16196e7:417481a39389b423ded3b322568ca09e@api.twilio.com/2010-04-01/Accounts/ACcc9266bb000e4b2c374a8cd8c16196e7/Messages.json
+    body:
+      encoding: US-ASCII
+      string: To=%2B447903524834&From=%2B441683292035&Body=and+this+is+the+message
+    headers:
+      Accept:
+      - application/json
+      Accept-Charset:
+      - utf-8
+      User-Agent:
+      - twilio-ruby/3.13.1 (ruby/x86_64-darwin12.5.0 2.0.0-p451)
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 201
+      message: CREATED
+    headers:
+      Date:
+      - Wed, 29 Oct 2014 13:12:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '758'
+      Connection:
+      - close
+      X-Powered-By:
+      - AT-5000
+      X-Shenanigans:
+      - none
+    body:
+      encoding: UTF-8
+      string: '{"sid": "SM5ba4778fb2fb4d78aba7004270a6d0ba", "date_created": "Wed,
+        29 Oct 2014 13:12:43 +0000", "date_updated": "Wed, 29 Oct 2014 13:12:43 +0000",
+        "date_sent": null, "account_sid": "ACcc9266bb000e4b2c374a8cd8c16196e7", "to":
+        "+447903524834", "from": "+441683292035", "body": "and this is the message",
+        "status": "queued", "num_segments": "1", "num_media": "0", "direction": "outbound-api",
+        "api_version": "2010-04-01", "price": null, "price_unit": "USD", "error_code":
+        null, "error_message": null, "uri": "/2010-04-01/Accounts/ACcc9266bb000e4b2c374a8cd8c16196e7/Messages/SM5ba4778fb2fb4d78aba7004270a6d0ba.json",
+        "subresource_uris": {"media": "/2010-04-01/Accounts/ACcc9266bb000e4b2c374a8cd8c16196e7/Messages/SM5ba4778fb2fb4d78aba7004270a6d0ba/Media.json"}}'
+    http_version: 
+  recorded_at: Wed, 29 Oct 2014 13:12:43 GMT
+recorded_with: VCR 2.9.3
