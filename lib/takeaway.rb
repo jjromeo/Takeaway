@@ -1,8 +1,13 @@
 require 'ostruct'
+require 'twilio-ruby'
+require './secrets.rb'
+
 class Takeaway
+    include SecretsHelper
     attr_accessor :dishes
    def initialize
        @dishes = OpenStruct.new(quarter_chicken: 2.5, half_chicken: 5, whole_chicken: 10, chicken_platter: 15)
+       set_secrets
    end
    
    def make_order(orders = {}, total)
@@ -28,9 +33,20 @@ class Takeaway
        total_total = existing_totals.inject(:+)
        if total_total == @total
            "order correct and being processed"
+           send_message
        else
            raise "The total amount is wrong! please try again"
        end
    end
+
+   def set_secrets
+       super
+   end
+
+    def send_message
+    @message = client.account.messages.create({to: "+447903524834",
+                                              from: "+441683292035",
+                                              body: "and this is the message"})
+    end
 end
 
