@@ -35,7 +35,7 @@ class Takeaway
        existing_totals = totals_array.reject {|total| total.nil?}
        total_total = existing_totals.inject(:+)
        if total_total == @total
-           "order correct and being processed"
+           puts "order correct and being processed"
            send_message
        else
            raise "The total amount is wrong! please try again"
@@ -49,7 +49,7 @@ class Takeaway
     def send_message
     @message = client.account.messages.create({to: "+447903524834",
                                               from: "+441683292035",
-                                              body: "and this is the message"})
+                                              body: "We are processing your order, it will arrive soon!"})
     end
 end
 
